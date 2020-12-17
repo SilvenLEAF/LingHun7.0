@@ -1,5 +1,4 @@
 // modules to help developing
-import dotenv from 'dotenv';     // to laod development variables on development mode
 import chalk from 'chalk';      // chalk makes colorful console.logs only to make our development easier
 
 
@@ -7,10 +6,10 @@ import chalk from 'chalk';      // chalk makes colorful console.logs only to mak
 
 
 if(process.env.NODE_ENV !== 'production'){
+  const dotenv = require('dotenv');     // to laod development variables on development mode
   // if we are on developemnt, load the development variables
   dotenv.config();
 }
-
 
 
 
